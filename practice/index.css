@@ -1,0 +1,218 @@
+::-webkit-scrollbar {
+    width: 16px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(64, 64, 64);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(96, 96, 96);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(112, 112, 112);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(128, 128, 128);
+}
+
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+    background-color: rgb(64, 64, 64);
+
+    display: block;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    height: 12px;
+    width: 16px;
+    background-position: center 4px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    height: 12px;
+    width: 16px;
+    background-position: center 2px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(112, 112, 112)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(112, 112, 112)'><polygon points='0,0 0,100 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment:active {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 0,100 50,50'/></svg>");
+}
+
+.linetop {
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    position: fixed;
+    z-index: 1000;
+    background: lightgreen;
+}
+
+#navbar {
+    z-index: 1000;
+    position: fixed;
+    top: 15px;
+    left: 0;
+    width: 100%;
+
+    overflow: hidden;
+    background-color: #333;
+}
+  
+#navbar a {
+    z-index: 1000;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#navbar a:visited {
+    background-color: rgba(68, 255, 22, 0.7);
+}
+
+#navbar a:hover {
+    background-color: rgba(68, 255, 22, 0.4);
+}
+  
+  /* Page content */
+.content {
+    z-index: 1000;
+    padding: 16px;
+}
+
+main {
+    margin-top: 80px;
+}
+
+
+
+.vis-large {
+    display: block;
+}
+
+.vis-small {
+    display: none;
+}
+
+body {
+    height: 1440px;
+    background-color: tan;
+}
+
+@media screen and (max-width: 950px) {
+
+    .vis-small {
+        display: block;
+    }
+
+    .vis-large {
+        display: none;
+    }
+
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.button {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    left: 90%;
+    top: 90%;
+    border-style: none;
+    border-radius: 100%;
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+    border-radius: 50%    
+}
+
+.button:hover {
+    color: white;
+    opacity: 1;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 101%;
+    height: 1440px;
+    margin-top: -17px;
+    margin-left: -8px;
+    
+}
+
+.box {
+    display: inline-block;
+    text-align: center;
+}
+
+.abtme {
+    background-color: grey;
+    width: 40%;
+}
+
+.aboutt {
+    animation: ease-in;
+    font-size: xx-large;
+    font-weight: bolder;
+
+}
+.sec {
+    text-align: unset;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.in{
+    position: inherit;
+    justify-items: center;
+    left: 50%;
+    right: 50%;
+    width: 40px;
+    background-color: red;
+}
+
+
+
+
+.contnt {
+    background-color: whitesmoke;
+    width: 60%;
+} 
+
+.title {
+    font-size: xx-large;
+    font-weight: bolder;
+
+}
+
+
